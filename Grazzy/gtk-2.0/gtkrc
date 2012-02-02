@@ -1,0 +1,90 @@
+# Grazzy GTK 2.0 theme
+# by Juhani Numminen <juhaninumminen0@gmail.com>
+# licenced under CC BY-NC-SA 3.0
+
+gtk_color_scheme = "fg_color:#101010101010\nbg_color:#f2f2f2\ntext_color:#1a1a1a1a1a1a\nbase_color:#ffffffffffff\nselected_fg_color:#101010\nselected_bg_color:#b7ff58\ntooltip_fg_color:#000000000000\ntooltip_bg_color:#f1f1f1"
+
+# Default style
+style "clearlooks-default"
+{
+    GtkButton      ::default-border		= { 1, 1, 1, 1 }
+    
+    GtkScale       ::slider-length		= 15 # Length of sliders.
+	GtkScrollbar   ::min-slider-length	= 15 # Min. length of scrollbars.
+	
+	GtkMenuBar     ::internal-padding	= 0
+	GtkToolbar     ::internal-padding	= 0
+	
+	GtkScrolledWindow ::scrollbar-spacing	= 2
+	GtkTreeView::odd_row_color		= mix(0.98, shade (0.93,@base_color), @selected_bg_color)
+	
+	fg[NORMAL]        = @fg_color
+	fg[PRELIGHT]      = @fg_color
+	fg[SELECTED]      = @selected_fg_color
+	fg[ACTIVE]        = @fg_color
+	fg[INSENSITIVE]   = darker (@bg_color)
+
+	bg[NORMAL]        = shade(0.92,@bg_color)
+	bg[PRELIGHT]      = shade (1.02, @bg_color)
+	bg[SELECTED]	  = @selected_bg_color  # Color for selected items.
+	bg[INSENSITIVE]   = @bg_color
+	bg[ACTIVE]        = shade (0.90, @bg_color)
+
+	base[NORMAL]      = @base_color
+	base[PRELIGHT]    = shade (0.95, @bg_color)
+	base[ACTIVE]      = shade (2.0, @selected_bg_color)
+	base[SELECTED]    = shade (1.25, @selected_bg_color)  # Color for selected base items.
+	base[INSENSITIVE] = @bg_color
+
+	text[NORMAL]      = @text_color
+	text[PRELIGHT]    = @text_color
+	text[ACTIVE]      = @selected_fg_color
+	text[SELECTED]    = @selected_fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+
+	engine "clearlooks" 
+	{
+		reliefstyle	= 0 # 0 makes buttons/widgets less raised.
+		menubarstyle	= 2 # Gradient menubar, use tweak in line 66 for flat menubars.
+		toolbarstyle	= 1 # 0 makes bad toolbars flat.
+		animation	= FALSE # FALSE disables progressbar animations.
+		style		= GLOSSY
+		radius		= 1.5 # Roundness.
+		hint		= "use-hints" # Set a hint to disable backward compatibility fallbacks.
+	}
+}
+
+# Scrollbar styles
+style "clearlooks-scrollbar"
+{
+	bg[NORMAL]	= shade (1.04, @bg_color)
+	bg[PRELIGHT]	= shade (1.08, @bg_color)
+	bg[ACTIVE]	= shade (0.85, @bg_color)
+	engine "clearlooks"
+	{
+		radius	= 1.5
+		hint	= "scrollbar"
+	}
+}
+
+style "clearlooks-hscrollbar" = "clearlooks-scrollbar"
+{
+	engine "clearlooks"
+	{
+		hint	= "hscrollbar"
+	}
+}
+
+style "clearlooks-vscrollbar" = "clearlooks-scrollbar"
+{
+	engine "clearlooks"
+	{
+		hint	= "vscrollbar"
+	}
+}
+
+class "GtkWidget"      style "clearlooks-default"
+class "GtkScrollbar"   style "clearlooks-scrollbar"
+class "GtkVScrollbar"  style "clearlooks-vscrollbar"
+class "GtkHScrollbar"  style "clearlooks-hscrollbar"
+
