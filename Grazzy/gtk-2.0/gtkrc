@@ -1,6 +1,6 @@
 # Grazzy GTK 2.0 theme
-# by Juhani Numminen <juhaninumminen0@gmail.com>
-# licenced under CC BY-NC-SA 3.0
+# by Juhani Numminen
+# licenced under GNU GPL v3
 
 gtk_color_scheme = "fg_color:#101010101010\nbg_color:#f2f2f2\ntext_color:#1a1a1a1a1a1a\nbase_color:#ffffffffffff\nselected_fg_color:#101010\nselected_bg_color:#b7ff58\ntooltip_fg_color:#000000000000\ntooltip_bg_color:#f1f1f1"
 
