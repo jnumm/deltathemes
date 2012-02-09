@@ -27,7 +27,7 @@ while [ "$1" != "" ]; do
 done
 
 # Actual copying.
-cp -r Blu-Day/ Grazzy/ Hard-Pink/ $installdir
+cp -r Blu-Day/ Grazzy/ Hard-Pink/ Sleany/ $installdir
 
 # Check if the copying succeeded.
 if [ $? -ne 0 ]; then

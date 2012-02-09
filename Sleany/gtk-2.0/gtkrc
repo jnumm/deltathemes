@@ -1,0 +1,85 @@
+# Sleany GTK 2.0 theme
+# by Juhani Numminen
+# licenced under GNU GPL v3
+
+gtk-color-scheme = "base_color:#\nfg_color:#f0ffd0\ntooltip_fg_color:#fff0ae\nselected_bg_color:#57d657\nselected_fg_color:#fffaff\ntext_color:#f1f0ff\nbg_color:#a6beff\ntooltip_bg_color:#020202"
+
+style "default"
+{
+	GtkButton::child-displacement-x = 1
+	GtkButton::child-displacement-y = 1
+	GtkButton::default-border = { 0, 0, 0, 0 }
+	GtkButton::image-spacing = 2
+	GtkToolButton::icon-spacing = 2
+	GtkCheckButton::indicator-size = 14
+
+	GtkEntry::invisible-char = 0x2022
+
+	GtkPaned::handle-size = 6
+
+	GtkRange::trough-border = 0
+	GtkRange::slider-width = 15
+	GtkRange::stepper-size = 15
+
+	GtkScale::slider-length = 23
+	GtkScale::trough-side-details = 1
+
+	GtkScrollbar::min-slider-length = 30
+	GtkMenuBar::internal-padding = 2
+	GtkExpander::expander-size = 16
+	GtkToolbar::internal-padding = 1
+	GtkTreeView::expander-size = 14
+	GtkTreeView::vertical-separator = 0
+	GtkMenu::horizontal-padding = 0
+	GtkMenu::vertical-padding = 0
+	
+	fg[NORMAL]        = @fg_color
+	fg[PRELIGHT]      = @fg_color
+	fg[SELECTED]      = @selected_fg_color
+	fg[ACTIVE]        = @fg_color
+	fg[INSENSITIVE]   = darker (@bg_color)
+
+	bg[NORMAL]        = shade(0.92,@bg_color)
+	bg[PRELIGHT]      = shade (1.02, @bg_color)
+	bg[SELECTED]	  = @selected_bg_color  # Color for selected items.
+	bg[INSENSITIVE]   = @bg_color
+	bg[ACTIVE]        = shade (0.90, @bg_color)
+
+	base[NORMAL]      = @base_color
+	base[PRELIGHT]    = shade (0.95, @bg_color)
+	base[ACTIVE]      = shade (2.0, @selected_bg_color)
+	base[SELECTED]    = shade (1.25, @selected_bg_color)  # Color for selected base items.
+	base[INSENSITIVE] = @bg_color
+
+	text[NORMAL]      = @text_color
+	text[PRELIGHT]    = @text_color
+	text[ACTIVE]      = @selected_fg_color
+	text[SELECTED]    = @selected_fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+
+	engine "clearlooks" 
+	{
+		reliefstyle	= 0 # 0 makes buttons/widgets less raised.
+		menubarstyle	= 2 # Gradient menubar.
+		toolbarstyle	= 1 # 0 makes bad toolbars flat.
+		animation	= FALSE # FALSE disables progressbar animations.
+		style		= GLOSSY
+		radius		= 1.5 # Roundness.
+		hint		= "use-hints" # Set a hint to disable backward compatibility fallbacks.
+	}
+}
+
+style "scrollbar" {
+
+	GtkScrollbar::has_backward_stepper	= 1
+	GtkRange::slider_width 			= 15
+	GtkRange::stepper_size 			= 15
+	GtkRange::trough-under-steppers 	= 1
+	GtkRange::trough-border        		= 0
+
+	xthickness = 1
+	ythickness = 1
+}
+
+class "GtkWidget" style "default"
+class "GtkScrollbar" style "scrollbar"
