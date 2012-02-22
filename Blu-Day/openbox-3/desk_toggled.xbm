@@ -1,0 +1,4 @@
+#define stick_t_width 6
+#define stick_t_height 6
+static unsigned char stick_t_bits[] = {
+   0x00, 0x00, 0x0c, 0x0c, 0x00, 0x00 };
