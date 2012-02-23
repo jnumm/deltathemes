@@ -15,7 +15,7 @@ menu.border.width: 1
 menu.overlap: 0
 
 # Border colors
-window.active.border.color: #003f85
+window.active.border.color: #003F85
 window.inactive.border.color: #B5B5B5
 menu.border.color: #9C9C9C
 window.active.client.color: #9C9C9C
@@ -28,14 +28,14 @@ menu.items.font: shadow=n
 menu.title.text.font: shadow=n
 
 # Window title justification
-window.label.text.justify: left
+window.label.text.justify: Left
 
 # Active window
 window.active.title.bg: Flat Gradient Vertical
-window.active.title.bg.color: #003f85
-window.active.title.bg.colorTo: #1a689f
+window.active.title.bg.color: #003F85
+window.active.title.bg.colorTo: #1A689F
 window.active.label.bg: Parentrelative
-window.active.label.text.color: #ffffff
+window.active.label.text.color: #FFFFFF
 
 window.active.handle.bg: Flat Gradient Vertical
 window.active.handle.bg.color: #303030
@@ -46,21 +46,21 @@ window.active.grip.bg.color: #303030
 window.active.grip.bg.colorTo: #303030
 
 window.active.button.unpressed.bg: Raised Solid
-window.active.button.unpressed.bg.color: #1a689f
-window.active.button.unpressed.image.color: white
+window.active.button.unpressed.bg.color: #1A689F
+window.active.button.unpressed.image.color: #FFFFFF
 
 window.active.button.pressed.bg: Sunken Solid
-window.active.button.pressed.bg.color: #0f3c5b
-window.active.button.pressed.image.color: #ffffff
+window.active.button.pressed.bg.color: #0F3C5B
+window.active.button.pressed.image.color: #FFFFFF
 
 window.active.button.hover.bg: Raised Solid
-window.active.button.hover.bg.color: #003f85
-window.active.button.hover.image.color: #ffffff
+window.active.button.hover.bg.color: #003F85
+window.active.button.hover.image.color: #FFFFFF
 
 window.active.button.disabled.bg: Raised Solid
 window.active.button.disabled.bg.color: #E3E3E3
 window.active.button.disabled.bg.colorTo: #C8C8C8
-window.active.button.disabled.image.color: #ffffff
+window.active.button.disabled.image.color: #FFFFFF
 
 # Inactive windows
 window.inactive.title.bg: Flat Gradient Vertical
@@ -85,38 +85,38 @@ window.inactive.button.unpressed.image.color: #ABABAB
 window.inactive.button.pressed.bg: Sunken Gradient Vertical
 window.inactive.button.pressed.bg.color: #E3E3E3
 window.inactive.button.pressed.bg.colorTo: #C8C8C8
-window.inactive.button.pressed.image.color: #ffffff
+window.inactive.button.pressed.image.color: #FFFFFF
 
 window.inactive.button.hover.bg: Raised Gradient Vertical
 window.inactive.button.hover.bg.color: #DDDDDC
 window.inactive.button.hover.bg.colorTo: #CBCBCA
-window.inactive.button.hover.image.color: #ffffff
+window.inactive.button.hover.image.color: #FFFFFF
 
 window.inactive.button.disabled.bg: Raised Gradient Vertical
 window.inactive.button.disabled.bg.color: #E3E3E3
 window.inactive.button.disabled.bg.colorTo: #C8C8C8
-window.inactive.button.disabled.image.color: #ffffff
+window.inactive.button.disabled.image.color: #FFFFFF
 
 # Menus
-menu.title.bg: flat
-menu.title.bg.color: #0f3c5b
+menu.title.bg: Flat
+menu.title.bg.color: #0F3C5B
 menu.title.text.color: #D8D8D8
-menu.title.text.justify: center
+menu.title.text.justify: Center
 
-menu.items.bg: flat solid
+menu.items.bg: Flat Solid
 menu.items.bg.color: #E9E9E9
 menu.items.bg.border.color: #BCBCBC
 menu.items.text.color: #81807c
-menu.items.justify: left
+menu.items.justify: Left
 
 menu.items.disabled.text.color: #CCCCCC
 menu.bullet.image.color: #000000
-menu.bullet.selected.image.color: #ffffff
+menu.bullet.selected.image.color: #FFFFFF
 
 menu.items.active.bg: Flat Border
-menu.items.active.bg.color: #0c479f
-menu.items.active.bg.border.color: #003f85
-menu.items.active.text.color: white
+menu.items.active.bg.color: #0C479F
+menu.items.active.bg.border.color: #003F85
+menu.items.active.text.color: #FFFFFF
 
 
 # osd

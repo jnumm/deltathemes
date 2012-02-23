@@ -5,7 +5,7 @@
 gtk_color_scheme = "fg_color:#101010101010\nbg_color:#f2f2f2\ntext_color:#1a1a1a1a1a1a\nbase_color:#ffffffffffff\nselected_fg_color:#101010\nselected_bg_color:#b7ff58\ntooltip_fg_color:#000000000000\ntooltip_bg_color:#f1f1f1"
 
 # Default style
-style "clearlooks-default"
+style "default"
 {
     GtkButton      ::default-border		= { 1, 1, 1, 1 }
     
@@ -45,8 +45,8 @@ style "clearlooks-default"
 	engine "clearlooks" 
 	{
 		reliefstyle	= 0 # 0 makes buttons/widgets less raised.
-		menubarstyle	= 2 # Gradient menubar, use tweak in line 66 for flat menubars.
-		toolbarstyle	= 1 # 0 makes bad toolbars flat.
+		menubarstyle= 2 # Gradient menubar.
+		toolbarstyle= 1 # 0 makes bad toolbars flat.
 		animation	= FALSE # FALSE disables progressbar animations.
 		style		= GLOSSY
 		radius		= 1.5 # Roundness.
@@ -55,10 +55,10 @@ style "clearlooks-default"
 }
 
 # Scrollbar styles
-style "clearlooks-scrollbar"
+style "scrollbar"
 {
 	bg[NORMAL]	= shade (1.04, @bg_color)
-	bg[PRELIGHT]	= shade (1.08, @bg_color)
+	bg[PRELIGHT]= shade (1.08, @bg_color)
 	bg[ACTIVE]	= shade (0.85, @bg_color)
 	engine "clearlooks"
 	{
@@ -67,7 +67,7 @@ style "clearlooks-scrollbar"
 	}
 }
 
-style "clearlooks-hscrollbar" = "clearlooks-scrollbar"
+style "hscrollbar" = "scrollbar"
 {
 	engine "clearlooks"
 	{
@@ -75,7 +75,7 @@ style "clearlooks-hscrollbar" = "clearlooks-scrollbar"
 	}
 }
 
-style "clearlooks-vscrollbar" = "clearlooks-scrollbar"
+style "vscrollbar" = "scrollbar"
 {
 	engine "clearlooks"
 	{
@@ -84,30 +84,31 @@ style "clearlooks-vscrollbar" = "clearlooks-scrollbar"
 }
 
 # Scale styles
-style "clearlooks-scale" {
+style "scale" {
 	engine "clearlooks" {
 		hint = "scale"
 	}
 }
 
-style "clearlooks-vscale" {
+style "vscale" {
 
 	engine "clearlooks" {
 		hint = "vscale"
 	}
 }
 
-style "clearlooks-hscale" {
+style "hscale" {
 
 	engine "clearlooks" {
 		hint = "hscale"
 	}
 }
 
-class "GtkWidget"      style "clearlooks-default"
-class "GtkScrollbar"   style "clearlooks-scrollbar"
-class "GtkVScrollbar"  style "clearlooks-vscrollbar"
-class "GtkHScrollbar"  style "clearlooks-hscrollbar"
-class "GtkScale"       style "clearlooks-scale"
-class "GtkVScale"      style "clearlooks-vscale"
-class "GtkHScale"      style "clearlooks-hscale"
+# Apply the styles to the widgets.
+class "GtkWidget"      style "default"
+class "GtkScrollbar"   style "scrollbar"
+class "GtkVScrollbar"  style "vscrollbar"
+class "GtkHScrollbar"  style "hscrollbar"
+class "GtkScale"       style "scale"
+class "GtkVScale"      style "vscale"
+class "GtkHScale"      style "hscale"

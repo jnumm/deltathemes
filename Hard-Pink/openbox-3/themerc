@@ -19,8 +19,8 @@ menu.overlap.y: 0
 window.active.border.color: #000000
 window.inactive.border.color: #000000
 menu.border.color: #000000
-window.active.client.color: #ffffff
-window.inactive.client.color: #cccccc
+window.active.client.color: #FFFFFF
+window.inactive.client.color: #CCCCCC
 
 # Text shadows
 window.active.label.text.font: shadow=y:shadowtint=70:shadowoffset=1
@@ -33,49 +33,49 @@ window.label.text.justify: Left
 
 # Active window
 window.active.title.bg: Raised Gradient Vertical
-window.active.title.bg.color: #ff8fb4
-window.active.title.bg.colorTo: #ff73b4
+window.active.title.bg.color: #FF8FB4
+window.active.title.bg.colorTo: #FF73B4
 
 window.active.label.bg: Parentrelative
-window.active.label.text.color: #ffffff
+window.active.label.text.color: #FFFFFF
 
 window.active.handle.bg: Flat Solid
-window.active.handle.bg.color: #ff8fb4
+window.active.handle.bg.color: #FF8FB4
 
 window.active.grip.bg: Parentrelative
 
 window.active.button.unpressed.bg: Parentrelative
-window.active.button.unpressed.image.color: #ffffff
+window.active.button.unpressed.image.color: #FFFFFF
 
 window.active.button.pressed.bg: Parentrelative
-window.active.button.pressed.image.color: #ffffff
+window.active.button.pressed.image.color: #FFFFFF
 
 window.active.button.disabled.bg: Parentrelative
-window.active.button.disabled.image.color: #3d4c5a
+window.active.button.disabled.image.color: #3D4C5A
 
 window.active.button.hover.bg: Parentrelative
-window.active.button.hover.image.color: #5f5f5f
+window.active.button.hover.image.color: #5F5F5F
 
 window.active.button.toggled.unpressed.bg: Parentrelative
-window.active.button.toggled.unpressed.image.color: #ffffff
+window.active.button.toggled.unpressed.image.color: #FFFFFF
 
 window.active.button.toggled.pressed.bg: Parentrelative
-window.active.button.toggled.pressed.image.color: #ffffff
+window.active.button.toggled.pressed.image.color: #FFFFFF
 
 window.active.button.toggled.hover.bg: Parentrelative
-window.active.button.toggled.hover.image.color: #5f5f5f
+window.active.button.toggled.hover.image.color: #5F5F5F
 
 # Inactive windows
 window.inactive.title.bg: Raised Gradient Vertical
-window.inactive.title.bg.color: #fff2f6
-window.inactive.title.bg.colorTo: #fff2f8
+window.inactive.title.bg.color: #FFF2F6
+window.inactive.title.bg.colorTo: #FFF2F8
 
 window.inactive.label.bg: Parentrelative
 window.inactive.label.text.color: #000000
 
 window.inactive.handle.bg: Raised Gradient Vertical
-window.inactive.handle.bg.color: #f1eeea
-window.inactive.handle.bg.colorTo: #d8cfc7
+window.inactive.handle.bg.color: #F1EEEA
+window.inactive.handle.bg.colorTo: #D8CFC7
 
 window.inactive.grip.bg: Parentrelative
 
@@ -86,7 +86,7 @@ window.inactive.button.pressed.bg: Parentrelative
 window.inactive.button.pressed.image.color: #000000
 
 window.inactive.button.disabled.bg: Parentrelative
-window.inactive.button.disabled.image.color: #8f8173
+window.inactive.button.disabled.image.color: #8F8173
 
 window.inactive.button.toggled.bg: Parentrelative
 window.inactive.button.toggled.image.color: #000000
@@ -105,9 +105,9 @@ window.inactive.button.toggled.hover.image.color: #000000
 
 # Menus
 menu.title.bg: Raised Gradient Vertical
-menu.title.bg.color: #ff8fb4
-menu.title.bg.colorTo: #ff73b4
-menu.title.text.color: #ffffff
+menu.title.bg.color: #FF8FB4
+menu.title.bg.colorTo: #FF73B4
+menu.title.text.color: #FFFFFF
 menu.title.text.justify: Left
 menu.separator.color: #444444
 menu.separator.width: 1
@@ -115,12 +115,12 @@ menu.separator.padding.width: 6
 menu.separator.padding.height: 3
 
 menu.items.bg: Flat Solid
-menu.items.bg.color: #f8f5f2
+menu.items.bg.color: #F8F5F2
 menu.items.text.color: #000000
-menu.items.disabled.text.color: #aaaaaa
+menu.items.disabled.text.color: #AAAAAA
 
 menu.items.active.bg: Flat Gradient Vertical
-menu.items.active.bg.color: #ff8fb4
-menu.items.active.bg.colorTo: #ff73b4
-menu.items.active.text.color: #ffffff
-menu.items.active.disabled.text.color: #aaaaaa
+menu.items.active.bg.color: #FF8FB4
+menu.items.active.bg.colorTo: #FF73B4
+menu.items.active.text.color: #FFFFFF
+menu.items.active.disabled.text.color: #AAAAAA
