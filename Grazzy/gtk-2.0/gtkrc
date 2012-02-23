@@ -83,8 +83,31 @@ style "clearlooks-vscrollbar" = "clearlooks-scrollbar"
 	}
 }
 
+# Scale styles
+style "clearlooks-scale" {
+	engine "clearlooks" {
+		hint = "scale"
+	}
+}
+
+style "clearlooks-vscale" {
+
+	engine "clearlooks" {
+		hint = "vscale"
+	}
+}
+
+style "clearlooks-hscale" {
+
+	engine "clearlooks" {
+		hint = "hscale"
+	}
+}
+
 class "GtkWidget"      style "clearlooks-default"
 class "GtkScrollbar"   style "clearlooks-scrollbar"
 class "GtkVScrollbar"  style "clearlooks-vscrollbar"
 class "GtkHScrollbar"  style "clearlooks-hscrollbar"
-
+class "GtkScale"       style "clearlooks-scale"
+class "GtkVScale"      style "clearlooks-vscale"
+class "GtkHScale"      style "clearlooks-hscale"
