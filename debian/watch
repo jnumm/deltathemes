@@ -1,0 +1,5 @@
+# Compulsory line, this is a version 3 file
+version=3
+
+# Project is hosted at GitHub
+https://github.com/jnumm/deltathemes/tags .*/tarball/(\d[\d\.]+)

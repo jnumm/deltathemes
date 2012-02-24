@@ -1,0 +1,20 @@
+Source: deltathemes
+Section: x11
+Priority: optional
+Maintainer: Juhani Numminen <juhaninumminen0@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Vcs-Git: git://github.com/jnumm/deltathemes.git
+Vcs-Browser: https://github.com/jnumm/deltathemes
+
+Package: deltathemes
+Architecture: all
+Depends: ${misc:Depends}, openbox (>= 3.0), gtk2-engines
+Description: theme pack
+ Deltathemes is a theme pack for Linux.
+ .
+ Includes the following themes:
+  * Grazzy GTK2 theme;
+  * Blu Day Openbox theme;
+  * Hard-Pink Openbox and GTK2 themes;
+  * Sleany GTK2 theme.

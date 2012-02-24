@@ -1,0 +1,26 @@
+deltathemes (0.2-2~1.git001d44) unstable; urgency=low
+
+  ** SNAPSHOT build @001d447cd8e197fe4fe2c782efae266e05391a0d **
+
+  * Change licensing to GNU GPL v3.
+  * Add Sleany GTK 2.0 theme
+  * Blu-Day: Change button style
+  * Blu-Day: Add bullet, desk and desk_toggled pixmaps
+  * Grazzy: Scale widgets
+  * Clear syntax
+  * Hard-Pink: Add GTK 2.0 theme
+
+ -- Juhani Numminen <juhaninumminen0@gmail.com>  Fri, 24 Feb 2012 10:03:47 +0200
+
+deltathemes (0.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Changed section to X11
+
+ -- Juhani Numminen <juhaninumminen0@gmail.com>  Sun, 05 Feb 2012 21:22:09 +0200
+
+deltathemes (0.1-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Juhani Numminen <juhaninumminen0@gmail.com>  Thu, 02 Feb 2012 18:14:20 +0200
