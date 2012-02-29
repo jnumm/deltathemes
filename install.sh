@@ -1,11 +1,17 @@
 #!/bin/bash
 # Deltathemes installation script.
 
-installdir="$HOME/.themes/"
+installdir="$HOME/.themes"
 
 function usage
 {
-    echo "Usage: `basename $0` [-s] [-d directory] [-h]"
+    echo "Usage: `basename $0` [-d directory] [-s] [-h]"
+    echo
+    echo "  -d, --directory DIRECTORY  install to DIRECTORY"
+    echo "  -s, --system-wide          install system-wide (to /usr/share/themes)"
+    echo "  -h, --help                 show this help"
+    echo
+    echo "If no arguments are specified, then the installation directory is ~/.themes."
 }
 
 # Command line parsing.
@@ -13,7 +19,7 @@ while [ "$1" != "" ]; do
     case $1 in
         -d | --directory )      shift
                                 installdir=$1
-                                mkdir -p $installdir
+                                mkdir -p "$installdir"
                                 ;;
         -s | --system-wide )    installdir="/usr/share/themes"
                                 ;;
@@ -35,4 +41,3 @@ if [ $? -ne 0 ]; then
 else
     echo "Installation succeeded!"
 fi
-

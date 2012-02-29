@@ -21,3 +21,17 @@ Author: Juhani Numminen
 Sleany
 Theme for GTK 2.0.
 Author: Juhani Numminen
+
+Installing
+-----------
+There are several ways to install Deltathemes.
+
+1) Use install.sh script. By default it installs to ~/.themes. See the
+--help option.
+ $ ./install.sh
+
+2) Manual copying.
+ $ cp Blu-Day/ Grazzy/ Hard-Pink/ Sleany/ <DESTINATION DIR HERE>
+
+3) Debian package for Ubuntu. See the web page
+https://launchpad.net/~jsonic/+archive/ppa for more information.
