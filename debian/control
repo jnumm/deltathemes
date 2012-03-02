@@ -9,12 +9,12 @@ Vcs-Browser: https://github.com/jnumm/deltathemes
 
 Package: deltathemes
 Architecture: all
-Depends: ${misc:Depends}, openbox (>= 3.0), gtk2-engines
+Depends: openbox (>= 3.0), gtk2-engines
 Description: theme pack
  Deltathemes is a theme pack for Linux.
  .
  Includes the following themes:
-  * Grazzy GTK2 theme;
   * Blu Day Openbox theme;
+  * Grazzy GTK2 theme;
   * Hard-Pink Openbox and GTK2 themes;
   * Sleany GTK2 theme.

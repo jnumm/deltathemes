@@ -1,3 +1,11 @@
+deltathemes (0.3-1) unstable; urgency=low
+
+  * Add branch for Debian packaging
+  * Better documentation in install script
+  * Installing help in README
+
+ -- Juhani Numminen <juhaninumminen0@gmail.com>  Thu, 01 Mar 2012 15:53:19 +0200
+
 deltathemes (0.2-2~1.git001d44) unstable; urgency=low
 
   ** SNAPSHOT build @001d447cd8e197fe4fe2c782efae266e05391a0d **
