@@ -1,3 +1,11 @@
+deltathemes (0.3-2) unstable; urgency=low
+
+  * Git-buildpackage conf file
+  * Increment Standards-Version to 3.9.3
+  * Add ${misc:Depends} to Depends field
+
+ -- Juhani Numminen <juhaninumminen0@gmail.com>  Sun, 04 Mar 2012 19:21:10 +0200
+
 deltathemes (0.3-1) unstable; urgency=low
 
   * Add branch for Debian packaging
