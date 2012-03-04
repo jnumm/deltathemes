@@ -9,7 +9,7 @@ Vcs-Browser: https://github.com/jnumm/deltathemes
 
 Package: deltathemes
 Architecture: all
-Depends: openbox (>= 3.0), gtk2-engines
+Depends: ${misc:Depends}, openbox (>= 3.0), gtk2-engines
 Description: theme pack
  Deltathemes is a theme pack for Linux.
  .
