@@ -1,11 +1,11 @@
 #!/bin/bash
 # Deltathemes installation script.
 
-installdir="$HOME/.themes"
+INSTALLDIR="$HOME/.themes"
 
 function usage
 {
-    echo "Usage: `basename $0` [-d directory] [-s] [-h]"
+    echo "Usage: `basename $0` [-d DIRECTORY] [-s] [-h]"
     echo
     echo "  -d, --directory DIRECTORY  install to DIRECTORY"
     echo "  -s, --system-wide          install system-wide (to /usr/share/themes)"
@@ -18,10 +18,10 @@ function usage
 while [ "$1" != "" ]; do
     case $1 in
         -d | --directory )      shift
-                                installdir=$1
-                                mkdir -p "$installdir"
+                                INSTALLDIR=$1
+                                mkdir -p "$INSTALLDIR"
                                 ;;
-        -s | --system-wide )    installdir="/usr/share/themes"
+        -s | --system-wide )    INSTALLDIR="/usr/share/themes"
                                 ;;
         -h | --help )           usage
                                 exit
@@ -33,7 +33,9 @@ while [ "$1" != "" ]; do
 done
 
 # Actual copying.
-cp -r Blu-Day/ Grazzy/ Hard-Pink/ Sleany/ $installdir
+# TODO: There must be a better way to copy the directories than
+# specifying them all...
+cp -r Blu-Day/ Grazzy/ Hard-Pink/ Sleany/ $INSTALLDIR
 
 # Check if the copying succeeded.
 if [ $? -ne 0 ]; then
