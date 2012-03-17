@@ -35,7 +35,7 @@ done
 # Actual copying.
 # TODO: There must be a better way to copy the directories than
 # specifying them all...
-cp -r Blu-Day/ Grazzy/ Hard-Pink/ Sleany/ $INSTALLDIR
+cp -r Blu-Day/ Grazzy/ Hard-Pink/ Nightly-Star/ Sleany/ $INSTALLDIR
 
 # Check if the copying succeeded.
 if [ $? -ne 0 ]; then

@@ -18,6 +18,11 @@ Hard-Pink
 Pink, girly theme for Openbox-3 and GTK 2.0.
 Author: Juhani Numminen
 
+Nightly-Star
+Openbox-3 theme made to match gtk2 theme newtonian flynn.
+Based on Dark Star theme by na12.
+Author: knembo2
+
 Sleany
 Theme for GTK 2.0.
 Author: Juhani Numminen
@@ -31,7 +36,7 @@ There are several ways to install Deltathemes.
  $ ./install.sh
 
 2) Manual copying.
- $ cp Blu-Day/ Grazzy/ Hard-Pink/ Sleany/ <DESTINATION DIR HERE>
+ $ cp Blu-Day/ Grazzy/ Hard-Pink/ Nightly-Star/ Sleany/ <DESTINATION DIR HERE>
 
 3) Debian package for Ubuntu. See the web page
 https://launchpad.net/~jsonic/+archive/ppa for more information.
